@@ -1,0 +1,8 @@
+<%= simple_form_for @customer do |f| %>
+  <%= f.label :name %>
+    <%= f.text_field :name %>
+    <%= f.label :email %>
+    <%= f.text_field :email %>
+  <%= f.button :submit %>
+<% end %>
+
