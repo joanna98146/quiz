@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Joanna Tracy Quiz1</title>
+    <title>Joanna Tracy Quiz2</title>
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
@@ -10,8 +10,22 @@
 
   <body>
     <p class=custom>Parkz</p>
+    <div class="navbar-inner">
+     
+       
+      </a>
+      <div class="container">
+        <div class="navbar-header">
+          <%= link_to 'customer', controller: 'customer' %>
+        </div>
+        
+      </div>
     <p class=headline>The only parking app you will ever need!</p>
+   <div class="booyah-box col-10 offset-1">
+<header class="navbar navbar-inverse navbar-fixed-top" role="navigation">
     
+    </div>
+  </header>
     <%= yield %>
   </body>
 </html>

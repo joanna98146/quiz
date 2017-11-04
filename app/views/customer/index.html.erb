@@ -1,16 +1,17 @@
-<h1>Customer#index</h1>
-<p>Find me in app/views/customer/index.html.erb</p>
-table>
-    <thead>
-        <th>Name</th>
-        <th>Email</th>
-    </thead>
-    <tbody>
-<% @customer.each do |user| %>
-    <tr>
-        <td><%= customer.name %></td>
-        <td><%= customer.email %></td>
-    </tr>
+<div class="booyah-box col-10 offset-1">
+<h2>Sign up</h2>
+<br />
+<%= simple_form_for(@customer, as: customer_new_path, url: customer_new_path(customer_new_path)) do |f| %>
+ 
+
+  <div class="form-inputs">
+    <%= f.input :email, required: true, autofocus: true %>
+  </div>
+<br />
+  <div class="form-actions">
+    <%= f.button :submit, "Sign up", class: 'btn btn-primary' %>
+  </div>
+  <br />
 <% end %>
-    </tbody>
-</table>
+
+<%= render "devise/shared/links" %>
