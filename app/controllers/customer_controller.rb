@@ -1,6 +1,6 @@
 class CustomerController < ApplicationController
   def index
-    @customer = Customer.all 
+    @customer = Customer.new
   end
 
   def new
