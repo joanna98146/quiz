@@ -1,0 +1,2 @@
+class Parkingspace < ApplicationRecord
+end

@@ -1,12 +1,12 @@
 Rails.application.routes.draw do
   devise_for :models
-  get 'customer/index'
+  #get 'customer/index'
 
-  get 'customer/new'
+  #get 'customer/new'
 
-  get 'customer/create'
+  #post 'customer/create'
 
-  get 'customer/show'
+resources :customers
 
       root 'places#index'
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html

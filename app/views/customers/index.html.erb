@@ -1,8 +1,7 @@
  
   <h1>Enter Your Customer Details</h1>
-  <%= simple_form_for customer_index_path  do |f| %>
-    <%= f.input :name %>
-    <%= f.input :address %>
+  <%= simple_form_for @customer do |f| %>
+    <%= f.input :username %>
     <%= f.input :email %>
     <br />
     <%= f.submit 'Submit', class: 'btn btn-primary' %>
