@@ -1,6 +1,6 @@
 class CustomersController < ApplicationController
   def index
-    @customer = Customer.new
+   @customers=Customer.all
   end
 
   def new
@@ -8,7 +8,7 @@ class CustomersController < ApplicationController
   end
 
   def create
-      @customer = Customer.new(params[:user])
+      @customer = Customer.new(params[:customer].permit(:username,:email))
     if @customer.save
         redirect_to customers_path, alert: "customer created successfully."
     else

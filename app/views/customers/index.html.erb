@@ -1,9 +1,3 @@
- 
-  <h1>Enter Your Customer Details</h1>
-  <%= simple_form_for @customer do |f| %>
-    <%= f.input :username %>
-    <%= f.input :email %>
-    <br />
-    <%= f.submit 'Submit', class: 'btn btn-primary' %>
-  <% end %>
-</div>
+ <% @customers.each do |customer| %>
+ <p><%= customer.to_json%></p>
+ <% end %> 
